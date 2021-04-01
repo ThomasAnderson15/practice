@@ -25,7 +25,9 @@ function calculateTotal(products, { discountPercentage, salesTax }) {
       quantity: 1,
     },
   ];
-  const options = { discountPercentage: 0.1, salesTax: 0.0825 };
+  const city1Options = { discountPercentage: 0.1, salesTax: 0.0825 };
+  const city2Options = { discountPercentage: 0.1, salesTax: 0.03 };
   
   // Function call
-  calculateTotal(products, options); //> 8768.25
+  calculateTotal(products, city1Options); //> 8768.25
+  calculateTotal(products, city2Options); //> ???
